@@ -9,19 +9,19 @@
 
 1.2. Click on "CREATE INSTANCE".
 
-<img src="images-are-used/gcloud-jupyter/1.png" alt="Image Description" width="70%" height="70%">
+<img src="images-are-used/gcloud-jupyter/1.png" alt="Image Description" width="50%" height="50%">
 
 1.3. Define your virtual machine's name that is distinguishable from others.
 
 1.4. Select a "region" for the virtual machine. As a user from Europe, preferably choose a region from Europe to have a faster connection in the future. Here, we have selected "europe-west4 (Netherlands)".
 
-<img src="images-are-used/gcloud-jupyter/2.png" alt="Image Description" width="70%" height="70%">
+<img src="images-are-used/gcloud-jupyter/2.png" alt="Image Description" width="50%" height="50%">
 
 1.5. Under the "Machine configuration" section, click on the "GPUs" tab.
 
 1.6. Select "GPU type". Here we selected the "NVIDIA A100 40GB".
 
-<img src="images-are-used/gcloud-jupyter/3.png" alt="Image Description" width="70%" height="70%">
+<img src="images-are-used/gcloud-jupyter/3.png" alt="Image Description" width="50%" height="50%">
 
 1.7. Under the "Boot disk" section, click on the "CHANGE" button.
 
@@ -37,7 +37,7 @@
 
 1.12. Click on the "CREATE" button at the end of the page.
 
-<img src="images-are-used/gcloud-jupyter/5.png" alt="Image Description" width="70%" height="70%">
+<img src="images-are-used/gcloud-jupyter/5.png" alt="Image Description" width="30%" height="30%">
 
 1.13. You will see your created virtual machine in the "INSTANCES" tab with a green tick before that.
 
