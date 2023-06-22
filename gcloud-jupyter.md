@@ -23,8 +23,17 @@
 
 <img src="images-are-used/gcloud-jupyter/3.png" alt="Image Description" width="648" height="243">
 
+1.7. Under the "Boot disk" section, click on the "CHANGE" button.
 
+1.8. Select the "Operating system". Here we need to select "Deep Learning on Linux".
 
+1.9. Select "Version". Here we need to select "Debian 11 based Deep Learning VM with M109"
+
+1.10. Specify the "Size (GB)". Here we need to specify "100".
+
+1.11. Click on the "Select" button to save and exist.
+
+<img src="images-are-used/gcloud-jupyter/4.png" alt="Image Description" width="1121" height="638">
 
 
 ```python
