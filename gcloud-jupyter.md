@@ -284,4 +284,47 @@ ssh -L 8080:localhost:8080 <REMOTE_USER>@<REMOTE_HOST> -N
 
 5.2. Open a new shell on the virtual machine, just like in step 2.1.
 
-5.3. 
+5.3. Change the directory into the repository.
+
+5.4. Set your Git user email and name. Replace "you@example.com" with your email address and "Your Name" with your preferred name or username.
+
+```bash
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
+5.4. Get status and see changes.
+
+```bash
+git status
+```
+
+5.5. Add desired changes. Replace notebook.ipynb with the actual filename of your Jupyter Notebook file.
+
+```bash
+git add notebook.ipynb
+```
+
+5.6. Commit the changes. Replace the commit message within the quotes with a descriptive message for the changes you made.
+
+```bash
+git commit -m "Update Jupyter Notebook file"
+```
+
+5.7. Push the changes. This command pushes the commits from your local master branch to the master branch of the remote repository named origin. If you are working on a different branch, replace the master with the appropriate branch name.
+
+```bash
+git push origin master
+```
+
+<img src="images-are-used/gcloud-jupyter/27.png" alt="Image Description" width="70%" height="70%">
+
+5.8. Fantastic! Now, you have the updated repository on your GitHub.
+
+<img src="images-are-used/gcloud-jupyter/28.png" alt="Image Description" width="70%" height="70%">
+
+
+
+
+
+## 6. Troubleshooting.
