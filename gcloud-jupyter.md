@@ -1,10 +1,16 @@
 
-# Take away commands:
+## 0. Take away commands:
+### this is a test
+
 - command 1
 - command 2
 - command 3
 ---
-## 1. Create a new virtual machine
+## 1. Create a new virtual machine:
+### this is a test
+
+---
+
 1.1. Go to your "Compute Engine" dashboard in "Google Cloud" and select the desired project.
 
 1.2. Click on "CREATE INSTANCE".
@@ -57,19 +63,74 @@
 
 <img src="images-are-used/gcloud-jupyter/8.png" alt="Image Description" width="70%" height="70%">
 
+1.19. Great! Now you've created a new virtual machine and you are ready to jump in!
 
 
 
 
-```python
-def greet(name):
-    print("Hello, " + name + "!")
+## 2. Set up the virtual machine
 
-greet("Alice")
+2.1. Click on "SSH" to connect to the virtual machine.
+
+<img src="images-are-used/gcloud-jupyter/9.png" alt="Image Description" width="99%" height="99%">
+
+2.2. If you've chosen the right operating system image, firstly you will see a question where you need to answer "y" to install Cuda, Python, and Anaconda. 
+
+<img src="images-are-used/gcloud-jupyter/10.png" alt="Image Description" width="50%" height="50%">
+
+<img src="images-are-used/gcloud-jupyter/11.png" alt="Image Description" width="50%" height="50%">
+
+2.3. Create a new environment in conda. You can modify the environment's name (test_env) to whatever you want.
+
+```bash
+conda create -n test_env
+```
+
+2.4. Activate the new environment.
+
+```bash
+conda activate test_env
+```
+
+2.5. Install the "jupyter notebook".
+
+```bash
+conda install jupyter notebook
+```
+
+<img src="images-are-used/gcloud-jupyter/12.png" alt="Image Description" width="70%" height="70%">
+
+2.3. Install the compatible PyTorch version with the Cuda drive:
+
+```bash
+conda install pytorch==1.13.0 pytorch-cuda=11.6 -c pytorch -c nvidia
+```
+
+2.4. Install the compatible Torchvision and Torchsummary without changing Pytorch and Cuda versions.
+
+```bash
+conda install torchvision==0.14.0
 ```
 
 ```bash
-$ git clone https://github.com/username/repo.git
-$ cd repo
-$ ls -la
+conda install -c conda-forge torchsummary
 ```
+2.5. Install all other packages you need them.
+
+```bash
+conda install pandas seaborn matplotlib scikit-learn
+```
+
+2.6. Install the "ipykernel"  to add your new environment to your jupyter notebook.
+
+```bash
+conda install ipykernel
+```
+
+ 2.7. Add the new environment ti the jupyter notebook.
+
+ ```bash
+python -m ipykernel install --user --name=test_env
+```
+
+
