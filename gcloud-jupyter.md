@@ -68,7 +68,7 @@
 
 
 
-## 2. Set up the virtual machine
+## 2. Install tools and packages on the virtual machine
 
 2.1. Click on "SSH" to connect to the virtual machine.
 
@@ -76,9 +76,9 @@
 
 2.2. If you've chosen the right operating system image, firstly you will see a question where you need to answer "y" to install Cuda, Python, and Anaconda. 
 
-<img src="images-are-used/gcloud-jupyter/10.png" alt="Image Description" width="50%" height="50%">
+<img src="images-are-used/gcloud-jupyter/10.png" alt="Image Description" width="70%" height="70%">
 
-<img src="images-are-used/gcloud-jupyter/11.png" alt="Image Description" width="40%" height="40%">
+<img src="images-are-used/gcloud-jupyter/11.png" alt="Image Description" width="50%" height="50%">
 
 2.3. Create a new environment in conda. You can modify the environment's name (test_env) to whatever you want.
 
@@ -98,7 +98,7 @@ conda activate test_env
 conda install jupyter notebook
 ```
 
-<img src="images-are-used/gcloud-jupyter/12.png" alt="Image Description" width="40%" height="40%">
+<img src="images-are-used/gcloud-jupyter/12.png" alt="Image Description" width="50%" height="50%">
 
 2.3. Install the compatible PyTorch version with the Cuda drive:
 
@@ -132,5 +132,79 @@ conda install ipykernel
  ```bash
 python -m ipykernel install --user --name=test_env
 ```
+2.8. Awesome! Now, you've installed all the necessary tools and packages.
 
 
+
+## 3. Clone a GitHub repository on the virtual machine
+
+3.1. Create a new repository on GitHub.
+
+[GitHub website](https://github.com/)
+
+3.2. Generate an SSH key pair by running the following command. Replace "your_email@example.com" with the email address associated with your GitHub account. When prompted, you can optionally set a passphrase for your SSH key pair. Setting a passphrase adds an extra layer of security but requires you to enter the passphrase every time you use the SSH key.
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+3.3. Once the key pair is generated, you should see output similar to:
+
+```bash
+Generating public/private rsa key pair.
+Your identification has been saved in /home/username/.ssh/id_rsa.
+Your public key has been saved in /home/username/.ssh/id_rsa.pub.
+```
+<img src="images-are-used/gcloud-jupyter/13.png" alt="Image Description" width="70%" height="70%">
+
+3.4. Use the following command to display the public key:
+
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+
+3.5. Copy the entire contents of the public key displayed in the terminal.
+
+3.6. Go to your GitHub "setting" click on the "SSH and GPG keys" tab and then click on the "New SSH key" button. 
+
+<img src="images-are-used/gcloud-jupyter/14.png" alt="Image Description" width="70%" height="70%">
+
+3.7. Provide a suitable title for the SSH key (e.g., "test-server SSH Key").
+
+3.8. Paste the copied public key into the "Key" field.
+
+3.9. Click on the "Add SSH key" button.
+
+<img src="images-are-used/gcloud-jupyter/15.png" alt="Image Description" width="70%" height="70%">
+
+3.10. Copy the repository URL on the GitHub repository page by clicking on the green "Code" button and copying the SSH URL.
+
+<img src="images-are-used/gcloud-jupyter/16.png" alt="Image Description" width="50%" height="50%">
+
+3.11. Clone the repository to the virtual machine. Replacing '<repository-url>' with the URL of your repository
+
+‍‍‍```bash
+git clone <repository-url>
+```
+
+3.12. Check that the repository is cloned.
+
+‍‍‍```bash
+ls
+```
+
+3.13. Move inside the repository by changing the directory and checking inside the repository.
+
+‍‍‍```bash
+cd test-repo
+```
+
+3.14. Move outside the repository by changing the directory.
+
+```bash
+cd ..
+```
+
+<img src="images-are-used/gcloud-jupyter/17.png" alt="Image Description" width="50%" height="50%">
+
+3.15. Perfect! Now, you've created and cloned the new repository on your virtual machine.
