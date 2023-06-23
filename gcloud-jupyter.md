@@ -1,13 +1,13 @@
 
-## 0. Take away commands:
-### this is a test
+## 0. Takeaway commands:
+### This is a test
 
 - command 1
 - command 2
 - command 3
 ---
 ## 1. Create a new virtual machine:
-### this is a test
+### This is a test
 
 ---
 
@@ -136,6 +136,8 @@ python -m ipykernel install --user --name=test_env
 
 
 
+
+
 ## 3. Clone a GitHub repository on the virtual machine
 
 3.1. Create a new repository on GitHub.
@@ -179,7 +181,7 @@ cat ~/.ssh/id_rsa.pub
 
 3.10. Copy the repository URL on the GitHub repository page by clicking on the green "Code" button and copying the SSH URL.
 
-<img src="images-are-used/gcloud-jupyter/16.png" alt="Image Description" width="50%" height="50%">
+<img src="images-are-used/gcloud-jupyter/16.png" alt="Image Description" width="70%" height="70%">
 
 3.11. Clone the repository to the virtual machine. Replacing '<repository-url>' with the URL of your repository
 
@@ -205,6 +207,81 @@ cd test-repo
 cd ..
 ```
 
-<img src="images-are-used/gcloud-jupyter/17.png" alt="Image Description" width="50%" height="50%">
+<img src="images-are-used/gcloud-jupyter/17.png" alt="Image Description" width="70%" height="70%">
 
 3.15. Perfect! Now, you've created and cloned the new repository on your virtual machine.
+
+
+
+
+
+
+
+## 4. Run Jupyter Notebook on the virtual machine and open it in a local machine browser
+
+4.1. Open a terminal or command prompt on your local machine and create and copy your public SSH key just like in step 3.2. to 3.5.
+
+4.2. Create an SSH directory in the virtual machine. Change the 'user name' to your own user name. You can find your 'user name' before your virtual machine's name.
+
+<img src="images-are-used/gcloud-jupyter/18.png" alt="Image Description" width="70%" height="70%">
+
+```bash
+mkdir -p /home//.ssh && touch /home/user_name/.ssh/authorized_keys
+```
+
+4.3. Open the 'authorized_keys' file with a text editor like Vim. Change the 'user name' to your own user name.
+
+```bash
+vim /home/user_name/.ssh/authorized_keys
+```
+<img src="images-are-used/gcloud-jupyter/19.png" alt="Image Description" width="70%" height="70%">
+
+4.4. Past your local machine's public SSH key there. Then save and close the file (press 'esc' then write ':wq').
+
+<img src="images-are-used/gcloud-jupyter/20.png" alt="Image Description" width="70%" height="70%">
+
+4.5. Set appropriate authorization to the file. First, set the correct file permissions and second, change the ownership to the 'user name'
+
+```bash
+chmod 700 /home/user_name/.ssh && chmod 600 /home/user_name/.ssh/authorized_keys
+```
+
+```bash
+chown -R username:username /home/username/.ssh
+```
+
+<img src="images-are-used/gcloud-jupyter/21.png" alt="Image Description" width="70%" height="70%">
+
+
+4.6. Run Jupyter Notebook with a desired port number (here is 8081) on the virtual machine without opening a browser. Then, copy one of the generated URLs and paste it on a browser on your local machine.
+
+```bash
+jupyter notebook --no-browser --port=8081
+```
+
+<img src="images-are-used/gcloud-jupyter/22.png" alt="Image Description" width="70%" height="70%">
+
+4.7. Open a terminal or command prompt on your local machine. Connect to the virtual machine. Replace '<REMOTE_USER>' with your 'user name' and '<REMOTE_HOST>' with your 'External IP' that you can find on the Compute Engine dashboard.
+
+<img src="images-are-used/gcloud-jupyter/23.png" alt="Image Description" width="70%" height="70%">
+
+```bash
+ssh -L 8080:localhost:8080 <REMOTE_USER>@<REMOTE_HOST> -N
+```
+
+<img src="images-are-used/gcloud-jupyter/24.png" alt="Image Description" width="70%" height="70%">
+
+4.8. Amazing! Now, you can work with your virtual machine Jupyter Notebook on your local machine. You can see the cloned repository (test_repo) and you can also have access to your new environment (test_env) as well.
+
+<img src="images-are-used/gcloud-jupyter/25.png" alt="Image Description" width="70%" height="70%">
+
+
+## 5. Control Jupyter Notebooks files version by GitHub.
+
+5.1. Move inside the repository folder and create a new change. Here, I've created a new file named 'hello_world'
+
+<img src="images-are-used/gcloud-jupyter/26.png" alt="Image Description" width="70%" height="70%">
+
+5.2. Open a new shell on the virtual machine, just like in step 2.1.
+
+5.3. 
