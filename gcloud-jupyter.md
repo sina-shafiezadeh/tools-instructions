@@ -78,7 +78,7 @@
 
 <img src="images-are-used/gcloud-jupyter/10.png" alt="Image Description" width="50%" height="50%">
 
-<img src="images-are-used/gcloud-jupyter/11.png" alt="Image Description" width="50%" height="50%">
+<img src="images-are-used/gcloud-jupyter/11.png" alt="Image Description" width="40%" height="40%">
 
 2.3. Create a new environment in conda. You can modify the environment's name (test_env) to whatever you want.
 
@@ -98,7 +98,7 @@ conda activate test_env
 conda install jupyter notebook
 ```
 
-<img src="images-are-used/gcloud-jupyter/12.png" alt="Image Description" width="70%" height="70%">
+<img src="images-are-used/gcloud-jupyter/12.png" alt="Image Description" width="40%" height="40%">
 
 2.3. Install the compatible PyTorch version with the Cuda drive:
 
