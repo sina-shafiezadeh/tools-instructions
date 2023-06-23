@@ -1,12 +1,12 @@
 
-## 0. Takeaway commands:
+# 0. Takeaway commands:
 ### This is a test
 
 - command 1
 - command 2
 - command 3
 ---
-## 1. Create a new virtual machine:
+# 1. Create a new virtual machine:
 ### This is a test
 
 ---
@@ -68,7 +68,7 @@
 
 
 
-## 2. Install tools and packages on the virtual machine
+# 2. Install tools and packages on the virtual machine
 
 2.1. Click on "SSH" to connect to the virtual machine.
 
@@ -138,7 +138,7 @@ python -m ipykernel install --user --name=test_env
 
 
 
-## 3. Clone a GitHub repository on the virtual machine
+# 3. Clone a GitHub repository on the virtual machine
 
 3.1. Create a new repository on GitHub.
 
@@ -189,23 +189,30 @@ cat ~/.ssh/id_rsa.pub
 git clone <repository-url>
 ```
 
+
 3.12. Check that the repository is cloned.
+
 
 ‍‍‍```bash
 ls
 ```
 
+
 3.13. Move inside the repository by changing the directory and checking inside the repository.
+
 
 ‍‍‍```bash
 cd test-repo
 ```
 
+
 3.14. Move outside the repository by changing the directory.
+
 
 ```bash
 cd ..
 ```
+
 
 <img src="images-are-used/gcloud-jupyter/17.png" alt="Image Description" width="70%" height="70%">
 
@@ -217,7 +224,7 @@ cd ..
 
 
 
-## 4. Run Jupyter Notebook on the virtual machine and open it in a local machine browser
+# 4. Run Jupyter Notebook on the virtual machine and open it in a local machine browser
 
 4.1. Open a terminal or command prompt on your local machine and create and copy your public SSH key just like in step 3.2. to 3.5.
 
@@ -276,7 +283,7 @@ ssh -L 8080:localhost:8080 <REMOTE_USER>@<REMOTE_HOST> -N
 <img src="images-are-used/gcloud-jupyter/25.png" alt="Image Description" width="70%" height="70%">
 
 
-## 5. Control Jupyter Notebooks files version by GitHub.
+# 5. Control Jupyter Notebooks files version by GitHub.
 
 5.1. Move inside the repository folder and create a new change. Here, I've created a new file named 'hello_world'
 
@@ -327,4 +334,4 @@ git push origin master
 
 
 
-## 6. Troubleshooting.
+# 6. Troubleshooting.
