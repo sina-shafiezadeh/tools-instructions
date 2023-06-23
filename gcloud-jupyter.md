@@ -332,6 +332,16 @@ git push origin master
 
 
 
+# 6. Upload data and file in the virtual machine.
 
 
-# 6. Troubleshooting.
+# 7. Troubleshooting.
+
+
+
+
+
+
+
+
+
