@@ -72,9 +72,9 @@
 2.19. Great! Now you've created a new virtual machine and you are ready to jump in!
 
 
-<!-- {#section-2} -->
+
 ---
-# 3. Install tools and packages on the virtual machine
+# 3. Install tools and packages on the virtual machine <!-- {#section-2} -->
 
 3.1. Click on "SSH" to connect to the virtual machine.
 
