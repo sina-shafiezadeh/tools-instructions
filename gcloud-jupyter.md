@@ -139,7 +139,7 @@ conda activate test_env
 conda install jupyter notebook
 ```
 
-<img src="images-are-used/gcloud-jupyter/12.png" alt="Image Description" width="70%" height="70%">
+<img src="images-are-used/gcloud-jupyter/12.png" alt="Image Description" width="60%" height="60%">
 
 3.3. Install the compatible PyTorch version with the Cuda drive:
 
@@ -227,34 +227,26 @@ cat ~/.ssh/id_rsa.pub
 4.11. Clone the repository to the virtual machine. Replacing '<repository-url>' with the URL of your repository
 
 ``` bash
-
 git clone <repository-url>
 ```
 
-
 4.12. Check that the repository is cloned.
 
-
-‍‍‍```bash
+```bash
 ls
 ```
 
-
 4.13. Move inside the repository by changing the directory and checking inside the repository.
 
-
-‍‍‍```bash
+```bash
 cd test-repo
 ```
 
-
 4.14. Move outside the repository by changing the directory.
-
 
 ```bash
 cd ..
 ```
-
 
 <img src="images-are-used/gcloud-jupyter/17.png" alt="Image Description" width="70%" height="70%">
 
@@ -272,7 +264,7 @@ cd ..
 
 5.2. Create an SSH directory in the virtual machine. Change the 'user name' to your own user name. You can find your 'user name' before your virtual machine's name.
 
-<img src="images-are-used/gcloud-jupyter/18.png" alt="Image Description" width="70%" height="70%">
+<img src="images-are-used/gcloud-jupyter/18.png" alt="Image Description" width="50%" height="50%">
 
 ```bash
 mkdir -p /home//.ssh && touch /home/user_name/.ssh/authorized_keys
@@ -322,7 +314,7 @@ ssh -L 8080:localhost:8080 <REMOTE_USER>@<REMOTE_HOST> -N
 
 5.8. Amazing! Now, you can work with your virtual machine Jupyter Notebook on your local machine. You can see the cloned repository (test_repo) and you can also have access to your new environment (test_env) as well.
 
-<img src="images-are-used/gcloud-jupyter/25.png" alt="Image Description" width="70%" height="70%">
+<img src="images-are-used/gcloud-jupyter/25.png" alt="Image Description" width="80%" height="80%">
 
 
 
@@ -332,7 +324,7 @@ ssh -L 8080:localhost:8080 <REMOTE_USER>@<REMOTE_HOST> -N
 
 6.1. Move inside the repository folder and create a new change. Here, I've created a new file named 'hello_world'
 
-<img src="images-are-used/gcloud-jupyter/26.png" alt="Image Description" width="70%" height="70%">
+<img src="images-are-used/gcloud-jupyter/26.png" alt="Image Description" width="80%" height="80%">
 
 6.2. Open a new shell on the virtual machine, just like in step 2.1.
 
@@ -385,7 +377,7 @@ git push origin master
 
 7.1. In method one and likely for a small size file, click on "UPLOAD FILE" after opening the window by following to click on "SSH" in front of the virtual machine name.
 
-<img src="images-are-used/gcloud-jupyter/29.png" alt="Image Description" width="70%" height="70%">
+<img src="images-are-used/gcloud-jupyter/29.png" alt="Image Description" width="50%" height="50%">
 
 7.2. In method two and useful for any size file, open a terminal or command prompt on your local machine and use the 'scp' command. Replace '/path/to/local/file.zip' with the local file's path and 'username@server:/path/on/server/file.zip' with the server's login details and the destination path where you want to upload the ZIP file.
 
