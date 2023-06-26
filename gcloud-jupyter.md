@@ -10,6 +10,12 @@
 - [Section 0: Takeaway commands](#section-0-takeaway-commands)
 ...
 
+## Table of Contents
+
+- [Section 1](#section-1)
+- [Section 2](#section-2)
+- [Section 3](#section-3)
+...
 
 
 # 0. Takeaway commands: {#section-0-takeaway-commands}
