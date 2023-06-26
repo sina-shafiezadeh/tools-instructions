@@ -109,7 +109,7 @@
 
 
 ---
-# 3. Install tools and packages on the virtual machine <a name="section-3"></a>
+## 3. Install tools and packages on the virtual machine <a name="section-3"></a>
 
 3.1. Click on "SSH" to connect to the virtual machine.
 
@@ -179,7 +179,7 @@ python -m ipykernel install --user --name=test_env
 
 
 ---
-# 4. Clone a GitHub repository on the virtual machine: <a name="section-4"></a>
+## 4. Clone a GitHub repository on the virtual machine: <a name="section-4"></a>
 
 4.1. Create a new repository on GitHub.
 
@@ -266,7 +266,7 @@ cd ..
 
 
 ---
-# 5. Run Jupyter Notebook on the virtual machine and open it in a local machine browser: <a name="section-5"></a>
+## 5. Run Jupyter Notebook on the virtual machine and open it in a local machine browser: <a name="section-5"></a>
 
 5.1. Open a terminal or command prompt on your local machine and create and copy your public SSH key just like in step 3.2. to 3.5.
 
@@ -328,7 +328,7 @@ ssh -L 8080:localhost:8080 <REMOTE_USER>@<REMOTE_HOST> -N
 
 
 ---
-# 6. Control Jupyter Notebooks files version by GitHub: <a name="section-6"></a>
+## 6. Control Jupyter Notebooks files version by GitHub: <a name="section-6"></a>
 
 6.1. Move inside the repository folder and create a new change. Here, I've created a new file named 'hello_world'
 
@@ -381,7 +381,7 @@ git push origin master
 
 
 ---
-# 7. Upload data and file in the virtual machine: <a name="section-7"></a>
+## 7. Upload data and file in the virtual machine: <a name="section-7"></a>
 
 7.1. In method one and likely for a small size file, click on "UPLOAD FILE" after opening the window by following to click on "SSH" in front of the virtual machine name.
 
@@ -400,7 +400,7 @@ scp /path/to/local/file.zip username@server:/path/on/server/file.zip
 
 
 ---
-# 8. Troubleshooting: <a name="section-8"></a>
+## 8. Troubleshooting: <a name="section-8"></a>
 
 8.1. It seems that there can be integration issues when installing packages using both 'pip' and 'conda'. To ensure smooth compatibility, it is advisable to install all the necessary Python packages using the 'conda' command.
 
