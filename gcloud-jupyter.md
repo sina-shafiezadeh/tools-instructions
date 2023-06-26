@@ -1,10 +1,12 @@
 # Table of Contents
-- [Section 1: Takeaway commands](#section-0)
-- [Section 2: Create a new virtual machine](#section-1)
+- [Section 1: Takeaway commands](#section-1-takeaway-commands)
+- [Section 2: Create a new virtual machine](#section-2-create-a-new-virtual-machine)
+
+
 
 
 ---
-## 1. Takeaway commands: {#section-0}
+## 1. Takeaway commands: 
 
 - command 1
 - command 2
@@ -12,7 +14,7 @@
 
 
 ---
-## 2. Create a new virtual machine: {#section-1}
+## 2. Create a new virtual machine: 
 
 2.1. Go to your "Compute Engine" dashboard in "Google Cloud" and select the desired project.
 
