@@ -1,34 +1,20 @@
 # Table of Contents
-- [Section 0: Takeaway commands](#section-0-takeaway-commands)
+- [Section 0: Takeaway commands](#section-0)
 - [Section 1: Takeaway commands](#section-1-takeaway-commands)
-- [Section 0: Takeaway commands](#section-0-takeaway-commands)
-- [Section 0: Takeaway commands](#section-0-takeaway-commands)
-- [Section 0: Takeaway commands](#section-0-takeaway-commands)
-- [Section 0: Takeaway commands](#section-0-takeaway-commands)
-- [Section 0: Takeaway commands](#section-0-takeaway-commands)
-- [Section 0: Takeaway commands](#section-0-takeaway-commands)
-- [Section 0: Takeaway commands](#section-0-takeaway-commands)
+
 ...
 
-## Table of Contents
+test {#section-0}
 
-- [Section 1](#section-1)
-- [Section 2](#section-2)
-- [Section 3](#section-3)
-...
-
-
-# 0. Takeaway commands: {#section-0-takeaway-commands}
-### This is a test
+## 0. Takeaway commands: {#section-0}
 
 - command 1
 - command 2
 - command 3
 ---
-# 1. Create a new virtual machine:
-### This is a test
 
----
+
+# 1. Create a new virtual machine:
 
 1.1. Go to your "Compute Engine" dashboard in "Google Cloud" and select the desired project.
 
