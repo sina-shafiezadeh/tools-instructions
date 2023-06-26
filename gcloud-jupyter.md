@@ -1,5 +1,18 @@
+# Table of Contents
+- [Section 0: Takeaway commands](#section-0-takeaway-commands)
+- [Section 1: Takeaway commands](#section-1-takeaway-commands)
+- [Section 0: Takeaway commands](#section-0-takeaway-commands)
+- [Section 0: Takeaway commands](#section-0-takeaway-commands)
+- [Section 0: Takeaway commands](#section-0-takeaway-commands)
+- [Section 0: Takeaway commands](#section-0-takeaway-commands)
+- [Section 0: Takeaway commands](#section-0-takeaway-commands)
+- [Section 0: Takeaway commands](#section-0-takeaway-commands)
+- [Section 0: Takeaway commands](#section-0-takeaway-commands)
+...
 
-# 0. Takeaway commands:
+
+
+# 0. Takeaway commands: {#section-0-takeaway-commands}
 ### This is a test
 
 - command 1
@@ -334,8 +347,31 @@ git push origin master
 
 # 6. Upload data and file in the virtual machine.
 
+6.1. In method one and likely for a small size file, click on "UPLOAD FILE" after opening the window by following to click on "SSH" in front of the virtual machine name.
+
+<img src="images-are-used/gcloud-jupyter/29.png" alt="Image Description" width="70%" height="70%">
+
+6.2. In method two and useful for any size file, open a terminal or command prompt on your local machine and use the 'scp' command. Replace '/path/to/local/file.zip' with the local file's path and 'username@server:/path/on/server/file.zip' with the server's login details and the destination path where you want to upload the ZIP file.
+
+```bash
+scp /path/to/local/file.zip username@server:/path/on/server/file.zip
+```
+6.3. Excellent! Now, you can upload files as much as you want. Of course, with care to your virtual machine capacity. 
+
 
 # 7. Troubleshooting.
+
+7.1. It seems that there can be integration issues when installing packages using both 'pip' and 'conda'. To ensure smooth compatibility, it is advisable to install all the necessary Python packages using the 'conda' command.
+
+7.2. When installing 'Torchvision', it is important to specify the version during the installation process. Failure to do so may result in an incompatible version of PyTorch being installed, causing issues with the CUDA version.
+
+7.3. If you find yourself frequently needing to shut down virtual machines, resulting in a change of the server's IP address each time, it can be convenient to automate the process of saving your local machine's SSH key into the 'authorized_keys' file using a 'bash' script.
+
+7.4. To ensure that Jupyter Notebook continues running on a virtual machine even when you close the window, you can create a new screen using the 'screen -R' command and then execute your tasks within that screen. Later, you can detach the screen by running 'screen -d'.
+
+7.5. If there are any other aspects you believe could be improved or any additional information you would like to include in these instructions, please let me know. Your feedback is greatly appreciated.
+
+
 
 
 
