@@ -5,9 +5,9 @@
 
 
 
-{#section-1}
+
 ---
-## 1. Takeaway commands: 
+## 1. Takeaway commands: <!-- {#section-1} -->
 
 - command 1
 - command 2
@@ -72,7 +72,7 @@
 2.19. Great! Now you've created a new virtual machine and you are ready to jump in!
 
 
-{#section-2}
+<!-- {#section-2} -->
 ---
 # 3. Install tools and packages on the virtual machine
 
