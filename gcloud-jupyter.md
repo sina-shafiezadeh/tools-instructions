@@ -74,7 +74,7 @@
 
 
 ---
-# 3. Install tools and packages on the virtual machine <!-- {#section-2} -->
+# 3. Install tools and packages on the virtual machine <a name="section-2"></a>
 
 3.1. Click on "SSH" to connect to the virtual machine.
 
