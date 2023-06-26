@@ -1,21 +1,29 @@
 # Table of Contents
 - [Section 1: Takeaway commands](#section-1)
 - [Section 2: Create a new virtual machine](#section-2)
+- [Section 3: Install tools and packages on the virtual machine](#section-3)
+- [Section 4: Clone a GitHub repository on the virtual machine](#section-4)
+- [Section 5: Run Jupyter Notebook on the virtual machine and open it in a local machine browser](#section-5)
+- [Section 6: Control Jupyter Notebooks files version by GitHub](#section-6)
+- [Section 7: Upload data and file in the virtual machine](#section-7)
+- [Section 8: Troubleshooting](#section-8)
 
 
 
 
 
 ---
-## 1. Takeaway commands: <!-- {#section-1} -->
+## 1. Takeaway commands: <a name="section-1"></a>
 
-- command 1
-- command 2
-- command 3
+- Open a file: ``` vim /home/user_name/.ssh/authorized_keys ```
+- Run jupyter notebook : ``` jupyter notebook --no-browser --port=8080 ```
+- Connect to a virtual machine: ``` ssh -L 8080:localhost:8080 <REMOTE_USER>@<REMOTE_HOST> -N ```
+- GitHub version control: ``` git status ``` and ```git add . ``` and ``` git commit -m "description" ``` and ``` git push origin master ```
+- Upload a file: ``` scp /path/to/local/file.zip username@server:/path/on/server/file.zip ```
 
 
 ---
-## 2. Create a new virtual machine: 
+## 2. Create a new virtual machine: <a name="section-2"></a>
 
 2.1. Go to your "Compute Engine" dashboard in "Google Cloud" and select the desired project.
 
@@ -74,7 +82,7 @@
 
 
 ---
-# 3. Install tools and packages on the virtual machine <a name="section-2"></a>
+# 3. Install tools and packages on the virtual machine <a name="section-3"></a>
 
 3.1. Click on "SSH" to connect to the virtual machine.
 
@@ -144,7 +152,7 @@ python -m ipykernel install --user --name=test_env
 
 
 ---
-# 4. Clone a GitHub repository on the virtual machine
+# 4. Clone a GitHub repository on the virtual machine: <a name="section-4"></a>
 
 4.1. Create a new repository on GitHub.
 
@@ -230,7 +238,7 @@ cd ..
 
 
 ---
-# 5. Run Jupyter Notebook on the virtual machine and open it in a local machine browser
+# 5. Run Jupyter Notebook on the virtual machine and open it in a local machine browser: <a name="section-5"></a>
 
 5.1. Open a terminal or command prompt on your local machine and create and copy your public SSH key just like in step 3.2. to 3.5.
 
@@ -292,7 +300,7 @@ ssh -L 8080:localhost:8080 <REMOTE_USER>@<REMOTE_HOST> -N
 
 
 ---
-# 6. Control Jupyter Notebooks files version by GitHub.
+# 6. Control Jupyter Notebooks files version by GitHub: <a name="section-6"></a>
 
 6.1. Move inside the repository folder and create a new change. Here, I've created a new file named 'hello_world'
 
@@ -345,7 +353,7 @@ git push origin master
 
 
 ---
-# 7. Upload data and file in the virtual machine.
+# 7. Upload data and file in the virtual machine: <a name="section-7"></a>
 
 7.1. In method one and likely for a small size file, click on "UPLOAD FILE" after opening the window by following to click on "SSH" in front of the virtual machine name.
 
@@ -364,7 +372,7 @@ scp /path/to/local/file.zip username@server:/path/on/server/file.zip
 
 
 ---
-# 8. Troubleshooting.
+# 8. Troubleshooting: <a name="section-8"></a>
 
 8.1. It seems that there can be integration issues when installing packages using both 'pip' and 'conda'. To ensure smooth compatibility, it is advisable to install all the necessary Python packages using the 'conda' command.
 
