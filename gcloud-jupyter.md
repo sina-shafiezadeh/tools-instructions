@@ -1,11 +1,11 @@
 # Table of Contents
-- [1. Takeaway commands:](#section-1-takeaway-commands)
-- [Section 2: Create a new virtual machine](#section-2-create-a-new-virtual-machine)
-- [Section 3: Create a new virtual machine](#section-2-create-a-new-virtual-machine)
+- [Section 1: Takeaway commands](#section-1)
+- [Section 2: Create a new virtual machine](#section-2)
 
 
 
 
+{#section-1}
 ---
 ## 1. Takeaway commands: 
 
@@ -72,7 +72,7 @@
 2.19. Great! Now you've created a new virtual machine and you are ready to jump in!
 
 
-
+{#section-2}
 ---
 # 3. Install tools and packages on the virtual machine
 
@@ -142,7 +142,7 @@ python -m ipykernel install --user --name=test_env
 
 
 
-{#section-1-takeaway-commands}
+
 ---
 # 4. Clone a GitHub repository on the virtual machine
 
