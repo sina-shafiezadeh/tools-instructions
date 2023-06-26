@@ -15,12 +15,39 @@
 ---
 ## 1. Takeaway commands: <a name="section-1"></a>
 
-- Open a file: ``` vim /home/user_name/.ssh/authorized_keys ```
-- Run jupyter notebook : ``` jupyter notebook --no-browser --port=8080 ```
-- Connect to a virtual machine: ``` ssh -L 8080:localhost:8080 <REMOTE_USER>@<REMOTE_HOST> -N ```
-- GitHub version control: ``` git status ``` and ```git add . ``` and ``` git commit -m "description" ``` and ``` git push origin master ```
-- Upload a file: ``` scp /path/to/local/file.zip username@server:/path/on/server/file.zip ```
-
+- Open a file:
+  ```bash
+  vim /home/user_name/.ssh/authorized_keys
+  ```
+  
+- Run jupyter notebook :
+  ```bash
+  jupyter notebook --no-browser --port=8080
+  ```
+  
+- Connect to a virtual machine: 
+  ```bash
+  ssh -L 8080:localhost:8080 <REMOTE_USER>@<REMOTE_HOST> -N
+  ```
+  
+- GitHub version control:
+  ```bash
+  git status
+  ```
+  ```bash
+  git add .
+  ```
+  ```bash
+  git commit -m "description"
+  ```
+  ```bash
+  git push origin master
+  ```
+    
+- Upload a file:
+  ```bash
+  scp /path/to/local/file.zip username@server:/path/on/server/file.zip
+  ```
 
 ---
 ## 2. Create a new virtual machine: <a name="section-2"></a>
@@ -112,7 +139,7 @@ conda activate test_env
 conda install jupyter notebook
 ```
 
-<img src="images-are-used/gcloud-jupyter/12.png" alt="Image Description" width="50%" height="50%">
+<img src="images-are-used/gcloud-jupyter/12.png" alt="Image Description" width="70%" height="70%">
 
 3.3. Install the compatible PyTorch version with the Cuda drive:
 
@@ -158,7 +185,7 @@ python -m ipykernel install --user --name=test_env
 
 [GitHub website](https://github.com/)
 
-4.2. Generate an SSH key pair by running the following command. Replace "your_email@example.com" with the email address associated with your GitHub account. When prompted, you can optionally set a passphrase for your SSH key pair. Setting a passphrase adds an extra layer of security but requires you to enter the passphrase every time you use the SSH key.
+4.2. Generate an SSH key pair by running the following command. Replace 'your_email@example.com' with the email address associated with your GitHub account. When prompted, you can optionally set a passphrase for your SSH key pair. Setting a passphrase adds an extra layer of security but requires you to enter the passphrase every time you use the SSH key.
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
@@ -183,7 +210,7 @@ cat ~/.ssh/id_rsa.pub
 
 4.6. Go to your GitHub "setting" click on the "SSH and GPG keys" tab and then click on the "New SSH key" button. 
 
-<img src="images-are-used/gcloud-jupyter/14.png" alt="Image Description" width="70%" height="70%">
+<img src="images-are-used/gcloud-jupyter/14.png" alt="Image Description" width="80%" height="80%">
 
 4.7. Provide a suitable title for the SSH key (e.g., "test-server SSH Key").
 
@@ -199,7 +226,8 @@ cat ~/.ssh/id_rsa.pub
 
 4.11. Clone the repository to the virtual machine. Replacing '<repository-url>' with the URL of your repository
 
-‍‍‍```bash
+``` bash
+
 git clone <repository-url>
 ```
 
