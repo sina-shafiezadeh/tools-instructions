@@ -379,11 +379,15 @@ git push origin master
 
 <img src="images-are-used/gcloud-jupyter/29.png" alt="Image Description" width="50%" height="50%">
 
-7.2. In method two and useful for any size file, open a terminal or command prompt on your local machine and use the 'scp' command. Replace '/path/to/local/file.zip' with the local file's path and 'username@server:/path/on/server/file.zip' with the server's login details and the destination path where you want to upload the ZIP file.
+7.2. In method two and useful for any size file, open a terminal or command prompt on your local machine and use the 'scp' command. Replace '/path/to/local/file.zip' with the local file's path and 'username@server:/path/on/server/file.zip' with the server's login details and the destination path where you want to upload the ZIP file. Finally, you can unzip the zip file in the directory.
 
 ```bash
 scp /path/to/local/file.zip username@server:/path/on/server/file.zip
 ```
+```bash
+unzip file.zip
+```
+
 7.3. Excellent! Now, you can upload files as much as you want. Of course, with care to your virtual machine capacity. 
 
 
