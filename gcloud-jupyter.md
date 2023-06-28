@@ -375,11 +375,11 @@ git push origin master
 ---
 ## 7. Upload data and file in the virtual machine: <a name="section-7"></a>
 
-7.1. In method one and likely for a small size file, click on "UPLOAD FILE" after opening the window by following to click on "SSH" in front of the virtual machine name.
+7.1. In method one, likely for a small size file, click on "UPLOAD FILE" after opening the window by following to click on "SSH" in front of the virtual machine name.
 
 <img src="images-are-used/gcloud-jupyter/29.png" alt="Image Description" width="50%" height="50%">
 
-7.2. In method two and useful for any size file, open a terminal or command prompt on your local machine and use the 'scp' command. Replace '/path/to/local/file.zip' with the local file's path and 'username@server:/path/on/server/file.zip' with the server's login details and the destination path where you want to upload the ZIP file. Finally, you can unzip the zip file in the directory.
+7.2. In method two, useful for any size file, open a terminal or command prompt on your local machine and use the 'scp' command. Replace '/path/to/local/file.zip' with the local file's path and 'username@server:/path/on/server/file.zip' with the server's login details and the destination path where you want to upload the ZIP file. Finally, you can unzip the zip file in the directory.
 
 ```bash
 scp /path/to/local/file.zip username@server:/path/on/server/file.zip
@@ -388,7 +388,13 @@ scp /path/to/local/file.zip username@server:/path/on/server/file.zip
 unzip file.zip
 ```
 
-7.3. Excellent! Now, you can upload files as much as you want. Of course, with care to your virtual machine capacity. 
+7.3. You can also provide additional options to the unzip command to modify its behavior. For example, you can use the '-d' option followed by a directory name to specify a different destination directory for the extracted files.
+
+```bash
+unzip file.zip -d /path/to/destination/directory
+```
+
+7.4. Excellent! Now, you can upload files as much as you want. Of course, with care to your virtual machine capacity. 
 
 
 
@@ -398,7 +404,7 @@ unzip file.zip
 ---
 ## 8. Troubleshooting: <a name="section-8"></a>
 
-8.1. It seems that there can be integration issues when installing packages using both 'pip' and 'conda'. To ensure smooth compatibility, it is advisable to install all the necessary Python packages using the 'conda' command.
+8.1. Apparently, there are integration issues when installing different packages using both 'pip' and 'conda'. To ensure smooth compatibility, it is advisable to install all the necessary Python packages using the 'conda' command.
 
 8.2. When installing 'Torchvision', it is important to specify the version during the installation process. Failure to do so may result in an incompatible version of PyTorch being installed, causing issues with the CUDA version.
 
