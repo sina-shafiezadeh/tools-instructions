@@ -66,7 +66,7 @@
 
 2.5. Under the "Machine configuration" section, click on the "GPUs" tab.
 
-2.6. Select "GPU type". Here we selected the "NVIDIA A100 40GB".
+2.6. Select "GPU type". Here we selected the "NVIDIA V100". We can select a more powerful GPU if we need one, like "NVIDIA A100 40GB".
 
 <img src="images-are-used/gcloud-jupyter/3.png" alt="Image Description" width="50%" height="50%">
 
