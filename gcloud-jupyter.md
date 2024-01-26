@@ -121,7 +121,7 @@
 
 <img src="images-are-used/gcloud-jupyter/11.png" alt="Image Description" width="50%" height="50%">
 
-3.3. Create a new environment in conda. You can modify the environment's name (test_env) to whatever you want.
+3.3. Create a new environment in conda. You can modify the environment's name (test_env) to whatever you want. You can also specify your Python version by adding "python=3.10" following the name of your environment.
 
 ```bash
 conda create -n test_env
@@ -155,11 +155,13 @@ conda install torchvision==0.14.0
 
 ```bash
 conda install -c conda-forge torchsummary
+conda install conda-forge::pytorch-model-summary
+
 ```
 3.5. Install all other packages you need them.
 
 ```bash
-conda install pandas seaborn matplotlib scikit-learn
+conda install pandas numpy seaborn matplotlib scikit-learn
 ```
 
 3.6. Install the "ipykernel"  to add your new environment to your jupyter notebook.
