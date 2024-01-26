@@ -154,9 +154,7 @@ conda install torchvision==0.14.0
 ```
 
 ```bash
-conda install -c conda-forge torchsummary
 conda install conda-forge::pytorch-model-summary
-
 ```
 3.5. Install all other packages you need them.
 
