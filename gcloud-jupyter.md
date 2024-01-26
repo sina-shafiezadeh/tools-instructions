@@ -260,14 +260,14 @@ cd ..
 ---
 ## 5. Run Jupyter Notebook on the virtual machine and open it in a local machine browser: <a name="section-5"></a>
 
-5.1. Open a terminal or command prompt on your local machine and create and copy your public SSH key just like in step 3.2. to 3.5.
+5.1. Open a terminal or command prompt on your local machine and create and copy your public SSH key just like in step 4.2. to 4.5.
 
-5.2. Create an SSH directory in the virtual machine. Change the 'user name' to your own user name. You can find your 'user name' before your virtual machine's name.
+5.2. Create an SSH directory in the virtual machine. Change the both 'user name' to your own user name. You can find your 'user name' before your virtual machine's name.
 
 <img src="images-are-used/gcloud-jupyter/18.png" alt="Image Description" width="50%" height="50%">
 
 ```bash
-mkdir -p /home//.ssh && touch /home/user_name/.ssh/authorized_keys
+mkdir -p /home/user_name//.ssh && touch /home/user_name/.ssh/authorized_keys
 ```
 
 5.3. Open the 'authorized_keys' file with a text editor like Vim. Change the 'user name' to your own user name.
