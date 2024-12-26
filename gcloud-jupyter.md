@@ -185,7 +185,7 @@ python -m ipykernel install --user --name=test_env
 
 [GitHub website](https://github.com/)
 
-4.2. Generate an SSH key pair by running the following command in the virtual machine. Replace 'your_email@example.com' with the email address associated with your GitHub account. When prompted, you can optionally set a passphrase for your SSH key pair. Setting a passphrase adds an extra layer of security but requires you to enter the passphrase every time you use the SSH key.
+4.2. Generate an SSH key pair by running the following command in the virtual machine (it doesn't matter on 'base' or 'test_env'). Replace 'your_email@example.com' with the email address associated with your GitHub account. When prompted, you can optionally set a passphrase for your SSH key pair. Setting a passphrase adds an extra layer of security but requires you to enter the passphrase every time you use the SSH key.
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
@@ -224,10 +224,10 @@ cat ~/.ssh/id_rsa.pub
 
 <img src="images-are-used/gcloud-jupyter/16.png" alt="Image Description" width="70%" height="70%">
 
-4.11. Clone the repository to the virtual machine. Replacing '<repository-url>' with the URL of your repository
+4.11. Clone the repository to the virtual machine. Replacing 'repository-url' with the URL of your repository
 
 ``` bash
-git clone <repository-url>
+git clone repository-url
 ```
 
 4.12. Check that the repository is cloned.
